@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktest_Backendless=self.webpackChunktest_Backendless||[]).push([[931],{174:function(e,s,t){t.r(s),s.default={}}}]);
+//# sourceMappingURL=MovieDetailsPage12.9b05c3a0.chunk.js.map
