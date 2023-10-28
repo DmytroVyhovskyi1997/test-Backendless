@@ -1,6 +1,6 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
-import TabContent from './components/TabContent/TabContent';
+import TabContent from './components/TabContent/TabContent.jsx';
 import NotFound from './components/NotFound';
 import { Container } from './components/Layout/Layout.styled';
 import tabs from './tabs.json';
