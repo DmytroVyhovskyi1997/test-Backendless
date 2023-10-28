@@ -2,6 +2,7 @@
   "name": "test-Backendless",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://DmytroVyhovskyi1997.github.io/test-Backendless/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
