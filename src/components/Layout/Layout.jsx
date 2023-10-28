@@ -1,4 +1,5 @@
-import { Link, Container, Nav } from './Layout.styled';
+import { Outlet } from 'react-router-dom';
+import {Link, Container,Nav} from "./Layout.styled"
 
 const Layout = ({ tabs }) => {
   return (
@@ -12,6 +13,9 @@ const Layout = ({ tabs }) => {
           ))}
         </Nav>
       </header>
+      <main>
+        <Outlet />
+      </main>
     </Container>
   );
 };
