@@ -1,14 +1,16 @@
-const DummyChart = ({array}) => {
+import { Table, TableRow, TableCell, TableBody } from './Table.styled';
+
+const DummyChart = ({ array }) => {
   return (
-    <>
-    <table>
-        <tbody>
-          <tr>
-            {array.map((item)=><td key={item}>{item}</td> )}
-          </tr>
-        </tbody>
-      </table>
-    </>
+    <Table>
+      <TableBody>
+        {array.map((item, index) => (
+          <TableRow key={index}>
+            <TableCell>{item}</TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
   );
 };
 

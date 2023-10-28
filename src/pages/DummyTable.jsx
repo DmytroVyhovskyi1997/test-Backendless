@@ -1,14 +1,17 @@
+import { Table, TableRow, TableCell, TableBody } from './Table.styled';
 
-const DummyTable = ({array})=>{
-    return(
-        <table>
-        <tbody>
-          <tr>
-            {array.map((item)=><td key={item}>{item}</td> )}
-          </tr>
-        </tbody>
-      </table>
-    )
-}
+const DummyTable = ({ array }) => {
+  return (
+    <Table>
+      <TableBody>
+        {array.map((item, index) => (
+          <TableRow key={index}>
+            <TableCell>{item}</TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
+  );
+};
 
 export default DummyTable;

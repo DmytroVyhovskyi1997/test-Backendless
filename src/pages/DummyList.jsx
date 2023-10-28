@@ -1,13 +1,17 @@
-const DummyList = ({array})=>{
-    return(
-        <table>
-        <tbody>
-          <tr>
-            {array.map((item)=><td key={item}>{item}</td> )}
-          </tr>
-        </tbody>
-      </table>
-    )
-}
+import { Table, TableRow, TableCell, TableBody } from './Table.styled';
+
+const DummyList = ({ array }) => {
+  return (
+    <Table>
+      <TableBody>
+        {array.map((item, index) => (
+          <TableRow key={index}>
+            <TableCell>{item}</TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
+  );
+};
 
 export default DummyList;
