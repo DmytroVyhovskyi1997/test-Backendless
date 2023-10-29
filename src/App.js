@@ -7,6 +7,7 @@ import tabs from './tabs.json';
 
 
 const App = () => {
+
   const sortedTabs = tabs.sort((a, b) => a.order - b.order);
 
   return (
