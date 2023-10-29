@@ -16,7 +16,7 @@ const App = () => {
           return <Route key={tab.id} path={`/${tab.id}`} exact element={<TabContent componentPath={tab.path} title={tab.title} />} />;
         })}
         <Route path="/" element={<Navigate to={sortedTabs[1].id} />} />
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Container>
   );

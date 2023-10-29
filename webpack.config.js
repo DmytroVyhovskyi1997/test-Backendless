@@ -13,7 +13,6 @@ module.exports = {
         path: path.resolve(__dirname, "./dist"),
         filename: production ? '[name].[contenthash].js' : '[name].js',
     },
-    devtool: 'none',
     module: {
         rules: [
             {
