@@ -13,6 +13,7 @@ module.exports = {
         path: path.resolve(__dirname, "./dist"),
         filename: production ? '[name].[contenthash].js' : '[name].js',
     },
+    devtool: 'none',
     module: {
         rules: [
             {
@@ -38,7 +39,7 @@ module.exports = {
         ],
     },
     resolve: {
-        extensions: ["*", ".js", ".jsx", ".scss"],
+        extensions: ["*", ".js", ".jsx"],
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -54,7 +55,6 @@ module.exports = {
     ],
     devServer: {
         port: 3001,
-        hot: true,
     },
     mode: production ? 'production' : 'development'
 };

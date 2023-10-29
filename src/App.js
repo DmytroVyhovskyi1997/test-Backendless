@@ -5,9 +5,7 @@ import NotFound from './components/NotFound';
 import { Container } from './components/Layout/Layout.styled';
 import tabs from './tabs.json';
 
-
 const App = () => {
-
   const sortedTabs = tabs.sort((a, b) => a.order - b.order);
 
   return (

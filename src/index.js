@@ -7,7 +7,8 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename='test-Backendless' >
+    <BrowserRouter basename='/test-Backendless'
+>
     <App />
     </BrowserRouter>
   </React.StrictMode>
@@ -17,4 +18,3 @@ const devMode = process.env.NODE_ENV === 'development';
 if (devMode && module && module.hot) {
     module.hot.accept();
 }
-
