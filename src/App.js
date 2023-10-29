@@ -15,7 +15,7 @@ const App = () => {
         {tabs.map((tab) => {
           return <Route key={tab.id} path={`/${tab.id}`} exact element={<TabContent componentPath={tab.path} title={tab.title} />} />;
         })}
-        <Route path="/" element={<Navigate to={sortedTabs[1].id} />} />
+        <Route path="/" element={<Navigate to={sortedTabs[0].id} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Container>
